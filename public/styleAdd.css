@@ -1,0 +1,181 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h2, h3, p, li, a, label, button{
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    margin: auto;
+    color: white;
+    background-image: url('./images/2022-01-08_18.41.45.jpg');
+    background-size: 4533px 2548px;
+    background-position: -1307px -734px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* NAV BAR*/
+
+nav {
+    background-image: url('./images/2022-01-08_18.41.45.jpg');
+    background-position: 0% 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 150px;
+    text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#lienlogo {
+    width: 100px;
+    margin-right: 100px;
+}
+
+#logo {
+    width: 100px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* MAIN CONTENT */
+
+main {
+    margin: auto;
+    margin-top: 300px;
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_ext {
+    position: relative;
+    bottom: 20px;
+    margin: 0;
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+input {
+    border: 0;
+    padding: 5px;
+}
+
+input, textarea, label {
+   margin-bottom: 25px;
+   border-radius: 50px;
+}
+
+textarea {
+    resize: none;
+    padding: 20px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    border: 3px transparent solid;
+    transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: white;
+    background-color: transparent;
+    border: 3px white solid;
+    transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+}
+
+.inputfile + label {
+	cursor: pointer;
+}
+
+button {
+    padding: 5px;
+    border: 3px transparent solid;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+}
+
+
+button:hover {
+    color: white;
+    background-color: transparent;
+    border: 3px white solid;
+    transition: background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+}
+
+@media screen and (max-width: 875px){
+    nav li {
+        display: block;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    #lienlogo {
+        margin-right: 75px;
+    }
+
+    #logo {
+        padding-right: 50px;
+        border-right: white 3px solid;
+    }
+
+    
+}
+
+@media screen and (max-width: 470px) {
+    textarea {
+        width: 80%;
+    }
+}
