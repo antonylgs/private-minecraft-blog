@@ -1,3 +1,3 @@
 ## Private Minecraft Blog
 
-**Online Website :** https://antonylanglois.com/blog-minecraft/
+**Online Website :** https://minecraft-blog.antonylanglois.com
